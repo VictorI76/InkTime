@@ -11,53 +11,49 @@ Acest document conține specificațiile tehnice, Bill of Materials (BOM) și det
 
 # 2. Bill Of Materials (BOM)
 
-## Bill of Materials (BOM) - Lista Completă de Componente
-
 | Cant. | Referințe | Valoare | Descriere Tehnică | Producător | Cod Piesă (MPN) |
 |:---:|:---|:---|:---|:---|:---|
-| 1 | U1 | nRF52840 | [cite_start]Microcontroller Bluetooth LE, AQFN-73 [cite: 5] | Nordic Semi | nRF52840-QIAA |
-| 1 | IC1 | BQ25180 | [cite_start]Charger Li-Ion/Polymer, 8-DSBGA [cite: 3, 4] | Texas Instr. | BQ25180YBGR |
-| 1 | IC2 | DRV2605 | [cite_start]Driver Haptic LRA/ERM, 9-DSBGA [cite: 3, 4] | Texas Instr. | DRV2605YZFR |
-| 1 | IC3 | BMA421 | [cite_start]Accelerometru Triaxial 12-bit [cite: 3] | Bosch | BMA423 |
-| 1 | IC9 | RT6160 | [cite_start]Buck-Boost DC-DC Controller, 15-WL-CSP [cite: 5] | Richtek | RT6160AWSC |
-| 1 | U3 | MAX17048 | [cite_start]Fuel Gauge (Monitorizare Baterie) [cite: 4] | Maxim/ADI | MAX17048G+T10 |
-| 1 | ANT1 | 2.45GHz | [cite_start]Antenă Chip Ceramică [cite: 1] | Johanson | 2450AT18B100E |
-| 1 | J4 | USB-C | [cite_start]Conector USB Type-C 16 pini [cite: 4] | Kinghelm | KH-TYPE-C-16P |
-| 1 | J1 | FPC 24 | [cite_start]Conector FFC/FPC 0.5mm, 24 pini  | Molex | 503480-2400 |
-| 1 | J2 | TC2030 | [cite_start]Interfață programare Tag-Connect [cite: 5] | Tag-Connect | TC2030-IDC |
-| 3 | SW_DN, SW_ENT, SW_UP | Tactile | [cite_start]Butoane navigare interfață [cite: 1] | Panasonic | EVP-AKE31A |
-| 1 | L5 | 68uH | [cite_start]Inductor putere ecranat [cite: 3] | Wurth | 744043680 |
-| 1 | L4 | 0.47uH | [cite_start]Inductor SMD [cite: 4] | TDK | FTC252012SR47MBCA |
-| 1 | L2 | 10uH | [cite_start]Inductor generic 0402 [cite: 1] | - | - |
-| 1 | L3 | 15nH | [cite_start]Inductor generic 0201 [cite: 1] | - | - |
-| 1 | L1 | 3.9nH | [cite_start]Inductor generic 0201  | - | - |
-| 1 | X1 | 32MHz | [cite_start]Cristal cuarț (Main Clock)  | - | - |
-| 1 | X2 | 32.768kHz | [cite_start]Cristal cuarț (RTC Clock)  | - | - |
-| 3 | D2, D4, D5 | MBR0530 | [cite_start]Diodă Schottky 0.5A, 30V, SOD-123 [cite: 4] | ON Semi | MBR0530 |
-| 1 | D3 | USBLC6-2 | [cite_start]Protecție ESD USB, SOT-23-6 [cite: 4] | ST Micro | USBLC6-2SC6Y |
-| 1 | Q1 | P-Ch | [cite_start]Tranzistor P-channel MOSFET [cite: 4] | - | - |
-| 1 | Q3 | N-Ch | [cite_start]Tranzistor N-channel MOSFET 30V, 1.5A [cite: 4] | Vishay | Si1308EDL |
-| 6 | R2_EP_DR, R5-R9, R_PWR | 10K | [cite_start]Rezistență 0201 Thin Film [cite: 1] | - | - |
-| 2 | R1_USB, R2_USB | 5K1 | [cite_start]Rezistență 0201 Thin Film  | - | - |
-| 2 | R17, R18 | 3K3 | [cite_start]Rezistență 0201 Thin Film  | - | - |
-| 3 | R2, R3, R4 | 0 | [cite_start]Rezistență 0201 (Jumper/0 Ohm) [cite: 1] | - | - |
-| 6 | C5-C19 | 100nF | [cite_start]Condensator decuplare 0201 [cite: 1] | - | - |
-| 9 | EPD_C1-C12 | 1uF/50V | [cite_start]Condensator 0402 [cite: 1] | - | - |
-| 5 | C6, C14, C20, C21, C43 | 4.7uF | [cite_start]Condensator 0402  | - | - |
-| 3 | C1-EP-DR, C24, C39 | 10uF | [cite_start]Condensator 0402 [cite: 1] | - | - |
-| 2 | C25, C33 | 22uF | [cite_start]Condensator 0402 [cite: 1] | - | - |
-| 4 | C23, C27, C34, C42 | 0.1uF | [cite_start]Condensator 0201 [cite: 1] | - | - |
-| 4 | C1, C2, C17, C18 | 12pF | [cite_start]Condensator 0201 [cite: 1] | - | - |
-| 14 | TP_3.3V ... TP_VREG | Test Pad | [cite_start]Puncte de testare semnale [cite: 4] | - | - |
-| 1 | SJ1 | Solder | [cite_start]Jumper de lipit SMD [cite: 1] | - | - |
+| 1 | U1 | nRF52840 | Microcontroller Bluetooth LE, AQFN-73 | Nordic Semi | nRF52840-QIAA |
+| 1 | IC1 | BQ25180 | Charger Li-Ion/Polymer, 8-DSBGA | Texas Instr. | BQ25180YBGR |
+| 1 | IC2 | DRV2605 | Driver Haptic LRA/ERM, 9-DSBGA | Texas Instr. | DRV2605YZFR |
+| 1 | IC3 | BMA421 | Accelerometru Triaxial 12-bit | Bosch | BMA423 |
+| 1 | IC9 | RT6160 | Buck-Boost DC-DC Controller, 15-WL-CSP | Richtek | RT6160AWSC |
+| 1 | U3 | MAX17048 | Fuel Gauge (Monitorizare Baterie) | Maxim/ADI | MAX17048G+T10 |
+| 1 | ANT1 | 2.45GHz | Antenă Chip Ceramică | Johanson | 2450AT18B100E |
+| 1 | J4 | USB-C | Conector USB Type-C 16 pini | Kinghelm | KH-TYPE-C-16P |
+| 1 | J1 | FPC 24 | Conector FFC/FPC 0.5mm, 24 pini  | Molex | 503480-2400 |
+| 1 | J2 | TC2030 | Interfață programare Tag-Connect | Tag-Connect | TC2030-IDC |
+| 3 | SW_DN, SW_ENT, SW_UP | Tactile | Butoane navigare interfață | Panasonic | EVP-AKE31A |
+| 1 | L5 | 68uH | Inductor putere ecranat | Wurth | 744043680 |
+| 1 | L4 | 0.47uH | Inductor SMD | TDK | FTC252012SR47MBCA |
+| 1 | L2 | 10uH | Inductor generic 0402 | - | - |
+| 1 | L3 | 15nH | Inductor generic 0201 | - | - |
+| 1 | L1 | 3.9nH | Inductor generic 0201  | - | - |
+| 1 | X1 | 32MHz | Cristal cuarț (Main Clock)  | - | - |
+| 1 | X2 | 32.768kHz | Cristal cuarț (RTC Clock)  | - | - |
+| 3 | D2, D4, D5 | MBR0530 | Diodă Schottky 0.5A, 30V, SOD-123 | ON Semi | MBR0530 |
+| 1 | D3 | USBLC6-2 | Protecție ESD USB, SOT-23-6 | ST Micro | USBLC6-2SC6Y |
+| 1 | Q1 | P-Ch | Tranzistor P-channel MOSFET | - | - |
+| 1 | Q3 | N-Ch | Tranzistor N-channel MOSFET 30V, 1.5A | Vishay | Si1308EDL |
+| 6 | R2_EP_DR, R5-R9, R_PWR | 10K | Rezistență 0201 Thin Film | - | - |
+| 2 | R1_USB, R2_USB | 5K1 | Rezistență 0201 Thin Film  | - | - |
+| 2 | R17, R18 | 3K3 | Rezistență 0201 Thin Film  | - | - |
+| 3 | R2, R3, R4 | 0 | Rezistență 0201 (Jumper/0 Ohm) | - | - |
+| 6 | C5-C19 | 100nF | Condensator decuplare 0201 | - | - |
+| 9 | EPD_C1-C12 | 1uF/50V | Condensator 0402 | - | - |
+| 5 | C6, C14, C20, C21, C43 | 4.7uF | Condensator 0402  | - | - |
+| 3 | C1-EP-DR, C24, C39 | 10uF | Condensator 0402 | - | - |
+| 2 | C25, C33 | 22uF | Condensator 0402 | - | - |
+| 4 | C23, C27, C34, C42 | 0.1uF | Condensator 0201 | - | - |
+| 4 | C1, C2, C17, C18 | 12pF | Condensator 0201 | - | - |
+| 14 | TP_3.3V ... TP_VREG | Test Pad | Puncte de testare semnale | - | - |
+| 1 | SJ1 | Solder | Jumper de lipit SMD | - | - |
 
 ---
 
-# 3. Funcționalitate Hardware
-### Module și Interfețe
-## Descrierea Detaliată a Funcționalității Hardware
+# 3. Funcționalității Hardware
 
-Descrierea Detaliată a Funcționalității Hardware
+## Descrierea Detaliată a Funcționalității Hardware
 
 Proiectul Hector Watch utilizează o arhitectură modulară optimizată pentru eficiență energetică și dimensiuni reduse, având la bază următoarele componente principale:
 
@@ -73,13 +69,13 @@ Sistemul de alimentare este proiectat pentru a asigura stabilitate și longevita
 
 ## Analiza Consumului de Energie și Autonomie
 
-[cite_start]Pentru a estima durata de viață a bateriei, am analizat principalele stări de funcționare ale componentelor identificate în BOM[cite: 1]:
+Pentru a estima durata de viață a bateriei, am analizat principalele stări de funcționare ale componentelor identificate în BOM:
 
 ### 1. Consum pe Module (Estimativ)
 
 | Modul / Componentă | Deep Sleep / Standby | Operare Activă (Typical) |
 | :--- | :--- | :--- |
-| **nRF52840 (U1)** | ~1.5 µA (RTC ON) | ~4.8 mA (TX @ 0dBm) |
+| **nRF52840 (U1)** | ~1.5 µA (RTC ON) | ~4.8 mA |
 | **BMA421 (IC3)** | ~1 µA (Suspend) | ~14.5 µA (Low Power) |
 | **MAX17048 (U3)** | ~3 µA (Hibernate) | ~23 µA (Activ) |
 | **RT6160 (IC9)** | ~1 µA (Iq) | Eficiență >85% |
@@ -88,8 +84,8 @@ Sistemul de alimentare este proiectat pentru a asigura stabilitate și longevita
 ### 2. Scenariu de Utilizare Tipic
 Consumul mediu este calculat pe baza unui ciclu de funcționare (Duty Cycle) în care dispozitivul petrece 99% din timp în mod Sleep:
 
-* [cite_start]**Consum în Sleep (Sistem complet):** ~20 µA (micro-Amperi).
-* [cite_start]**Consum în Activitate (Scurte pulsații):** ~5-10 mA (mili-Amperi).
+* **Consum în Sleep (Sistem complet):** ~20 µA (micro-Amperi).
+* **Consum în Activitate (Scurte pulsații):** ~5-10 mA (mili-Amperi).
 * **Consum Mediu Estimat:** **~55 µA**.
 
 ## Calcul Autonomie
@@ -113,13 +109,11 @@ $$Autonomie = \frac{200 mAh}{0.055 mA} \approx 3636 \text{ ore}$$
 
 ### 5. Protecție și Componente Pasive
 * **Protecție ESD USBLC6-2SC6Y (D3)**: Protejează pinii de date USB împotriva descărcărilor electrostatice.
-* [cite_start]**Diodă Schottky MBR0530 (D2, D4, D5)**: Componente utilizate pentru redresare și protecția căilor de alimentare.
-* [cite_start]**Filtrare locală**: Sistemul utilizează o rețea densă de condensatoare de decuplare (majoritatea în capsulă 0201) pentru a reduce zgomotul electric pe liniile de alimentare.
+* **Diodă Schottky MBR0530 (D2, D4, D5)**: Componente utilizate pentru redresare și protecția căilor de alimentare.
+* **Filtrare locală**: Sistemul utilizează o rețea densă de condensatoare de decuplare (majoritatea în capsulă 0201) pentru a reduce zgomotul electric pe liniile de alimentare.
 ---
 
 # 4. Alocare Pini nRF52840
-# nRF52840 – Conectarea pinilor
-
 
 
 ## 1. Alimentare și stabilizare
